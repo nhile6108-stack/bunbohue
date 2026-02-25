@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Vietnamese Culinary Art - Bun Bo Hue </title>
+
+<link href="https://bizweb.dktcdn.net/100/442/328/files/bun-bo-hue-dac-san-dan-da-lam-say-long-biet-bao-thuc-khach-4.jpg?v=1638937219225" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    background:#f5f5f5;
+    font-family:'Montserrat', sans-serif;
+    color:#222;
+}
+
+/* HEADER */
+.header{
+    background:url("https://bizweb.dktcdn.net/100/442/328/files/bun-bo-hue-dac-san-dan-da-lam-say-long-biet-bao-thuc-khach-4.jpg?v=1638937219225") no-repeat center;
+    background-size:cover;
+    height:500px;
+    position:relative;
+}
+
+.header::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65); /* lớp làm mờ */
+}
+
+.header-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:2;
+    color:white;
+}
+
+.header-content h1{
+    font-family:'Playfair Display', serif;
+    font-size:60px;
+    letter-spacing:4px;
+    color:#d4af37;
+}
+
+.header-content p{
+    font-style:italic;
+    letter-spacing:2px;
+}
+
+/* SECTION */
+.section{
+    padding:80px 12%;
+    background:white;
+}
+
+.section.dark{
+    background:#111;
+    color:white;
+}
+
+.section h2{
+    font-family:'Playfair Display', serif;
+    font-size:34px;
+    margin-bottom:25px;
+    color:#bfa046;
+}
+
+.section.dark h2{
+    color:#d4af37;
+}
+
+.section p{
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* Ảnh chính */
+.main-img{
+    width:100%;
+    border-radius:15px;
+    margin-top:40px;
+    transition:0.4s;
+}
+
+.main-img:hover{
+    transform:scale(1.03);
+}
+
+/* GRID NGUYÊN LIỆU */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    color:white;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+.card img{
+    width:100%;
+    border-radius:12px;
+    transition:0.4s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+.card p{
+    margin-top:15px;
+    font-weight:600;
+    color:#d4af37;
+    letter-spacing:1px;
+}
+
+/* Hình trang trí mờ */
+.decor{
+    background:url("https://bizweb.dktcdn.net/100/442/328/files/bun-bo-hue-dac-san-dan-da-lam-say-long-biet-bao-thuc-khach-4.jpg?v=1638937219225") no-repeat center;
+    background-size:cover;
+    height:280px;
+    opacity:0.12;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:#d4af37;
+    text-align:center;
+    padding:40px;
+    font-size:14px;
+    letter-spacing:2px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <h1>BUN BO HUE</h1>
+        <p>The Spicy Soul of Central Vietnam</p>
+    </div>
+</div>
+
+<div class="section">
+<h2>Giá trị văn hoá & ẩm thực</h2>
+<p>
+Bún bò Huế là tinh hoa ẩm thực miền Trung, nổi bật với hương vị đậm đà,
+cay nồng đặc trưng từ sả và ớt. Món ăn thể hiện tính cách mạnh mẽ,
+phóng khoáng của con người xứ Huế. Nước dùng có màu đỏ cam hấp dẫn,
+kết hợp vị ngọt từ xương bò cùng mắm ruốc tạo nên chiều sâu hương vị.
+</p>
+
+<img class="main-img"
+src="https://bizweb.dktcdn.net/100/442/328/files/bun-bo-hue-dac-san-dan-da-lam-say-long-biet-bao-thuc-khach-4.jpg?v=1638937219225">
+</div>
+
+<div class="section dark">
+<h2>Nguyên liệu tinh chọn</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://sube.vn/wp-content/uploads/2025/01/ham-xuong-bang-noi-nau-cham-bear-1.jpg">
+<p>Xương bò & giò heo</p>
+</div>
+
+<div class="card">
+<img src="https://cf.shopee.vn/file/d162e19e2b8c06e7f9706462b816c0e6">
+<p>Bún sợi to</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.tgdd.vn/2021/04/CookProduct/BeFunky-collage(4)-1200x676.jpg">
+<p>Thịt bò & chả cua</p>
+</div>
+
+<div class="card">
+<img src="https://i-giadinh.vnecdn.net/2022/09/29/-2592-1664442768.jpg">
+<p>Sả, ớt & mắm ruốc</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Nghệ thuật chế biến</h2>
+<p>
+Nước dùng được hầm nhiều giờ cùng sả đập dập để tạo hương thơm nồng ấm.
+Mắm ruốc được lọc kỹ để giữ độ trong nhưng vẫn đảm bảo chiều sâu vị giác.
+Khi thưởng thức, bún mềm hòa cùng thịt bò, giò heo và rau sống,
+tạo nên sự cân bằng giữa cay – ngọt – thơm đặc trưng.
+</p>
+</div>
+
+<div class="section dark">
+<h2>Đánh giá phong vị</h2>
+<p>
+Bún bò gây ấn tượng bởi vị cay dịu lan tỏa, vị ngọt đậm đà của nước dùng
+và mùi thơm quyến rũ từ sả. Tổng thể món ăn vừa mạnh mẽ vừa tinh tế,
+là một trong những biểu tượng ẩm thực đặc sắc của Việt Nam.
+</p>
+</div>
+
+<div class="decor"></div>
+
+<footer>
+Vietnamese Culinary Art © 2026
+</footer>
+
+</body>
+</html>
