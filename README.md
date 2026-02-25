@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<title>Vietnamese Culinary Art - Pho</title>
+
+<!-- Google Font sang trọng -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    background:#f5f5f5;
+    font-family:'Montserrat', sans-serif;
+    color:#222;
+}
+
+/* HEADER */
+.header{
+    background:url("https://i-giadinh.vnecdn.net/2025/11/17/Pho-bo-Ha-Noi-7-vnexpress-1763-7388-9585-1763372391.jpg") no-repeat center;
+    background-size:cover;
+    height:500px;
+    position:relative;
+}
+
+.header::after{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.6);
+}
+
+.header-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    z-index:2;
+    color:white;
+}
+
+.header-content h1{
+    font-family:'Playfair Display', serif;
+    font-size:60px;
+    letter-spacing:4px;
+    color:#d4af37;
+}
+
+.header-content p{
+    font-style:italic;
+    letter-spacing:2px;
+}
+
+/* SECTION */
+.section{
+    padding:80px 12%;
+    background:white;
+}
+
+.section.dark{
+    background:#111;
+    color:white;
+}
+
+.section h2{
+    font-family:'Playfair Display', serif;
+    font-size:34px;
+    margin-bottom:25px;
+    color:#bfa046;
+}
+
+.section.dark h2{
+    color:#d4af37;
+}
+
+.section p{
+    line-height:1.8;
+    font-size:17px;
+}
+
+/* Ảnh chính */
+.main-img{
+    width:100%;
+    border-radius:15px;
+    margin-top:40px;
+    transition:0.4s;
+}
+
+.main-img:hover{
+    transform:scale(1.03);
+}
+
+/* GRID NGUYÊN LIỆU */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+    margin-top:50px;
+}
+
+.card{
+    background:#1c1c1c;
+    padding:20px;
+    text-align:center;
+    border-radius:15px;
+    color:white;
+    transition:0.4s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.6);
+}
+
+.card img{
+    width:100%;
+    border-radius:12px;
+    transition:0.4s;
+}
+
+.card:hover img{
+    transform:scale(1.05);
+}
+
+.card p{
+    margin-top:15px;
+    font-weight:600;
+    color:#d4af37;
+    letter-spacing:1px;
+}
+
+/* Hình trang trí mờ */
+.decor{
+    background:url("https://bizweb.dktcdn.net/100/477/987/products/pho-bo-ha-noi-jpeg.jpg?v=1712628941747") no-repeat center;
+    background-size:cover;
+    height:280px;
+    opacity:0.12;
+}
+
+/* FOOTER */
+footer{
+    background:#111;
+    color:#d4af37;
+    text-align:center;
+    padding:40px;
+    font-size:14px;
+    letter-spacing:2px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="header">
+    <div class="header-content">
+        <h1>PHO</h1>
+        <p>A Refined Taste of Vietnam</p>
+    </div>
+</div>
+
+<div class="section">
+<h2>Giá trị văn hoá & ẩm thực</h2>
+<p>
+Phở là biểu tượng tiêu biểu của ẩm thực Việt Nam, phản ánh nghệ thuật cân bằng hương vị tinh tế.
+Nước dùng trong và thanh, được hầm nhiều giờ để đạt độ ngọt tự nhiên,
+kết hợp cùng hương thơm dịu nhẹ của quế, hồi và thảo quả.
+Không chỉ là một món ăn, phở còn đại diện cho bản sắc dân tộc và đã trở thành đại sứ văn hóa,
+xuất hiện tại nhiều thành phố lớn trên thế giới.
+</p>
+
+<img class="main-img"
+src="https://i-giadinh.vnecdn.net/2025/11/17/Pho-bo-Ha-Noi-7-vnexpress-1763-7388-9585-1763372391.jpg">
+</div>
+
+<div class="section dark">
+<h2>Nguyên liệu tinh chọn</h2>
+
+<div class="grid">
+
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0609/4694/0131/files/ham-xuong-bo_480x480.webp?v=1712213158">
+<p>Xương bò hầm chậm</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0609/4694/0131/files/bi-quyet-chon-banh-pho_480x480.png?v=1712213350">
+<p>Bánh phở mềm dai</p>
+</div>
+
+<div class="card">
+<img src="https://cdn.shopify.com/s/files/1/0609/4694/0131/files/bi-quyet-chon-thit-bo-nau-pho_480x480.jpg?v=1712213494">
+<p>Thịt bò tươi lát mỏng</p>
+</div>
+
+<div class="card">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTre9kUL0R54vEYbJT2nCW7j9eTlZQXgUWITg&s">
+<p>Quế, hồi & thảo quả</p>
+</div>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Nghệ thuật chế biến</h2>
+<p>
+Quá trình chế biến phở đòi hỏi sự kiên nhẫn và chính xác.
+Xương được hầm trong nhiều giờ để tạo nên nền nước dùng thanh nhã.
+Gia vị được thêm đúng thời điểm nhằm giữ được sự cân bằng.
+Khi thưởng thức, từng lát thịt bò chín tái hòa quyện cùng bánh phở mềm,
+tạo nên trải nghiệm ẩm thực tinh tế và sâu lắng.
+</p>
+</div>
+
+<div class="section dark">
+<h2>Đánh giá phong vị</h2>
+<p>
+Phở gây ấn tượng bởi cấu trúc hương vị đa tầng:
+mở đầu thanh nhẹ, sau đó lan tỏa vị ngọt tự nhiên và kết thúc bằng dư vị ấm áp của gia vị.
+Tổng thể món ăn thể hiện sự sang trọng giản dị,
+một chuẩn mực tinh tế của ẩm thực châu Á đương đại.
+</p>
+</div>
+
+<div class="decor"></div>
+
+<footer>
+Vietnamese Culinary Art © 2026
+</footer>
+
+</body>
+</html>
